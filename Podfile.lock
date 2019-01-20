@@ -1,0 +1,16 @@
+PODS:
+  - hidapi (1.0.0)
+
+DEPENDENCIES:
+  - hidapi
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - hidapi
+
+SPEC CHECKSUMS:
+  hidapi: 88dabef48766d02950b8a21ff018a9ff0c0fafc7
+
+PODFILE CHECKSUM: f9fbc13ee2ad0d114120aba387bb9b25fc53f901
+
+COCOAPODS: 1.5.3

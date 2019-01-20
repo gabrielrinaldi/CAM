@@ -7,20 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4169D3350D8E5D3BD065F379 /* Pods_CAM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A809B55DBAF81869F347309D /* Pods_CAM.framework */; };
 		C06C40B721F3EF68007BBCF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C40B621F3EF68007BBCF4 /* AppDelegate.swift */; };
-		C06C40B921F3EF68007BBCF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C40B821F3EF68007BBCF4 /* ViewController.swift */; };
 		C06C40BB21F3EF68007BBCF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06C40BA21F3EF68007BBCF4 /* Assets.xcassets */; };
 		C06C40BE21F3EF68007BBCF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06C40BC21F3EF68007BBCF4 /* Main.storyboard */; };
+		C06C40C721F3EF72007BBCF4 /* CAMCtl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C40C621F3EF72007BBCF4 /* CAMCtl.swift */; };
+		C06C40C921F3FCA4007BBCF4 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06C40C821F3FCA4007BBCF4 /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0073583C8B7F232EA4951376 /* Pods-CAM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAM.release.xcconfig"; path = "Pods/Target Support Files/Pods-CAM/Pods-CAM.release.xcconfig"; sourceTree = "<group>"; };
+		198C91DD12BC8ADF09BB8270 /* Pods-CAM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CAM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CAM/Pods-CAM.debug.xcconfig"; sourceTree = "<group>"; };
+		A809B55DBAF81869F347309D /* Pods_CAM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CAM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06C40B321F3EF68007BBCF4 /* CAM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CAM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C06C40B621F3EF68007BBCF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C06C40B821F3EF68007BBCF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C06C40BA21F3EF68007BBCF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C06C40BD21F3EF68007BBCF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C06C40BF21F3EF68007BBCF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C06C40C021F3EF68007BBCF4 /* CAM.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CAM.entitlements; sourceTree = "<group>"; };
+		C06C40C621F3EF72007BBCF4 /* CAMCtl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CAMCtl.swift; sourceTree = "<group>"; };
+		C06C40C821F3FCA4007BBCF4 /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +34,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4169D3350D8E5D3BD065F379 /* Pods_CAM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1972E8AD1216797E8985B14C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				198C91DD12BC8ADF09BB8270 /* Pods-CAM.debug.xcconfig */,
+				0073583C8B7F232EA4951376 /* Pods-CAM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A94FD9040D5A471362D75CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A809B55DBAF81869F347309D /* Pods_CAM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C06C40AA21F3EF68007BBCF4 = {
 			isa = PBXGroup;
 			children = (
 				C06C40B521F3EF68007BBCF4 /* CAM */,
 				C06C40B421F3EF68007BBCF4 /* Products */,
+				1972E8AD1216797E8985B14C /* Pods */,
+				8A94FD9040D5A471362D75CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +80,12 @@
 			isa = PBXGroup;
 			children = (
 				C06C40B621F3EF68007BBCF4 /* AppDelegate.swift */,
-				C06C40B821F3EF68007BBCF4 /* ViewController.swift */,
 				C06C40BA21F3EF68007BBCF4 /* Assets.xcassets */,
 				C06C40BC21F3EF68007BBCF4 /* Main.storyboard */,
 				C06C40BF21F3EF68007BBCF4 /* Info.plist */,
 				C06C40C021F3EF68007BBCF4 /* CAM.entitlements */,
+				C06C40C621F3EF72007BBCF4 /* CAMCtl.swift */,
+				C06C40C821F3FCA4007BBCF4 /* Menu.swift */,
 			);
 			path = CAM;
 			sourceTree = "<group>";
@@ -70,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C06C40C321F3EF68007BBCF4 /* Build configuration list for PBXNativeTarget "CAM" */;
 			buildPhases = (
+				70654876BC19C76F10A25B26 /* [CP] Check Pods Manifest.lock */,
 				C06C40AF21F3EF68007BBCF4 /* Sources */,
 				C06C40B021F3EF68007BBCF4 /* Frameworks */,
 				C06C40B121F3EF68007BBCF4 /* Resources */,
+				58EB4F4153468D111BACA1B5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -95,6 +124,11 @@
 				TargetAttributes = {
 					C06C40B221F3EF68007BBCF4 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -128,12 +162,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		58EB4F4153468D111BACA1B5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CAM/Pods-CAM-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/hidapi/hidapi.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/hidapi.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CAM/Pods-CAM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		70654876BC19C76F10A25B26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CAM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C06C40AF21F3EF68007BBCF4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C06C40B921F3EF68007BBCF4 /* ViewController.swift in Sources */,
+				C06C40C721F3EF72007BBCF4 /* CAMCtl.swift in Sources */,
+				C06C40C921F3FCA4007BBCF4 /* Menu.swift in Sources */,
 				C06C40B721F3EF68007BBCF4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,9 +351,11 @@
 		};
 		C06C40C421F3EF68007BBCF4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 198C91DD12BC8ADF09BB8270 /* Pods-CAM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CAM/CAM.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DCFUXK7B3L;
@@ -282,15 +366,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.gabrielrinaldi.CAM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
 		C06C40C521F3EF68007BBCF4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0073583C8B7F232EA4951376 /* Pods-CAM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = CAM/CAM.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = DCFUXK7B3L;
@@ -301,6 +388,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = me.gabrielrinaldi.CAM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 			};
 			name = Release;

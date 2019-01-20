@@ -10,17 +10,20 @@ import Cocoa
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
-
-
+    private var camctl: CAMCtl?
+    private var menu: Menu?
+    
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        self.camctl = CAMCtl()
+
+        if let camctl = self.camctl {
+            self.menu = Menu(camctl: camctl)
+        }
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
-        // Insert code here to tear down your application
+        if let camctl = self.camctl {
+            camctl.unload()
+        }
     }
-
-
 }
-
